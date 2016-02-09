@@ -1,0 +1,17 @@
+<h1>Mi first Page</h1>
+<p>
+  Prueba de .... <%= Date.today %>.
+</p>
+
+<% if Date.today.monday? %>
+  <p>
+    hoy es monday
+  </p>
+<% end %>
+
+<% if Date.today.tuesday? %>
+  <p>
+    hoy es martes <br />
+    <%= @greeting %>
+  </p>
+<% end %>

@@ -1,0 +1,27 @@
+body {
+  font-family: Verdana, Geneva, sans-serif;
+}
+p {
+  color: red;
+}
+li {
+  color: blue;
+}
+
+img {
+  margin: 0 auto 0 auto;
+}
+#container {
+  width: 700px;
+  height: 600px;
+  border: 1px solid #000;
+}
+#imgleo {
+  width: 480px;
+  margin: 0 auto 0 auto;
+  background-color: #000;
+}
+
+#leo {
+  margin: 0 auto 0 auto
+}
