@@ -1,0 +1,27 @@
+<html>
+<head>
+  <title>Insecure Password</title>
+</head>
+<body>
+  <h1>Check password <%= @email_recover %></h1>
+<div id="article">
+  <h2>Error!</h2>
+  <h3>Please check if your email and password are correct.</h3>
+  <p>
+    <ul>
+      <li>Contain 1 lower case</li>
+      <li>Contain 1 upper case</li>
+      <li>Contain 1 number</li>
+      <li>Contain 1 special char like: <strong>(* # !)</strong></li>
+      <li>And that the password does not contain your email (user or domain)</li>
+    </ul>
+  <form action="/senddata" method="POST">
+    <input type="email" name="email" placeholder="email" value ="<%= @email_recover %>">
+    <input type="password" name="password" placeholder="password">
+
+    <button type="submit" name="operation" value="sumbit">Enviar</button>
+  </form>
+  </p>
+</div>
+</body>
+</html>
